@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PRS Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="/Pictures/favicon.ico" type="image/x-icon" />
+<link href='http://fonts.googleapis.com/css?family=Roboto'rel='stylesheet' type='text/css'>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script src="script.js"></script>
+<link rel="stylesheet"href="style.css">
+    </head>
+    <body>
+    <div class="bar"id="appbar">
+        <div class="applist"id="al1">
+            Tasks<img src="Pictures/plus32.png">
+        </div>
+        <div class="applist"id="al2">
+            Calculator<img src="Pictures/plus32.png">
+        </div>
+        <div class="applist"id="al3">
+            Class Map<img src="Pictures/plus32.png">
+        </div>
+        <div class="applist"id="al4">
+            Sports<img src="Pictures/plus32.png">
+        </div>
+        <div class="applist"id="al3">
+            Forums<img src="Pictures/plus32.png">
+        </div>
+    </div>
+    <div class="bar"id="settingsbar">
+        <textarea class='taskname'placeholder='Username'id="l1"></textarea>
+        <textarea class='taskname'placeholder='Password'id="l2"></textarea>
+        <div id="loginsubmit">Login</div>
+    </div>
+    <div id="body">
+        <div id="header">
+            <div id="app">
+                <img src="Pictures/show6.png">
+            </div>
+            <div id="title">Pacific Ridge Dashboard</div>
+            <div id="date"></div>
+            <div id="settings">
+                <img src="Pictures/equalizer3.png">
+                <img src="Pictures/male80.png">
+            </div>
+        </div>
+        <div id="dayview">
+            <div id="daybar">
+                <div class="period"id="period1"></div>
+                <div class="period"id="period2"></div>
+                <div class="period"id="period3"></div>
+                <div class="period"id="period4"></div>
+                <div class="period"id="period5"></div>
+                <div class="period"id="period6"></div>
+                <div class="period"id="period7"></div>
+                <div class="period"id="period8"></div>
+            </div>
+            <div id="classlist">
+                <div class="class"id="class1">
+                    <div class="classheader"id="ch1"></div>
+                    <span class="title" id="t1"></span>
+                    <br>Period 1<br>8:00-9:25<br>
+                </div>
+                <div class="class"id="class2">
+                    <div class="classheader"id="ch2"></div>
+                    <span class="title" id="t2"></span>
+                    <br>Period 2<br>8:00-9:25<br>
+                </div>
+                <div class="class"id="class3">
+                    <div class="classheader"id="ch3"></div>
+                    <span class="title" id="t3"></span>
+                    <br>Period 3<br>9:30-11:00<br>
+                </div>
+                <div class="class"id="class4">
+                    <div class="classheader"id="ch4"></div>
+                    <span class="title" id="t4"></span>
+                    <br>Period 4<br>9:30-11:00<br>
+                </div>
+                <div class="class"id="class5">
+                    <div class="classheader"id="ch5"></div>
+                    <span class="title" id="t5"></span>
+                    <br>Period 5<br>12:00-1:25<br>
+                </div>
+                <div class="class"id="class6">
+                    <div class="classheader"id="ch6"></div>
+                    <span class="title" id="t6"></span>
+                    <br>Period 6<br>12:00-1:25<br>
+                </div>
+                <div class="class"id="class7">
+                    <div class="classheader"id="ch7"></div>
+                    <span class="title" id="t7"></span>
+                    <br>Period 7<br>1:25-3:00<br>
+                </div>
+                <div class="class"id="class8">
+                    <div class="classheader"id="ch8"></div>
+                    <span class="title" id="t8"></span>
+                    <br>Period 8<br>1:25-3:00<br>
+                </div>
+            </div>
+        <div id="appssection">
+            <div class="app"id="tasks">
+                <div id="taskstitle">Tasks</div>
+                <div id="createdtasks"></div>
+                <div id="newtask">Create New Task
+                    <img src="Pictures/plus32.png">
+                </div>
+            </div>
+            <div class="app"id="calculator">
+                <div id="calcresult"></div>
+                <div id="calcoperation"></div>
+                <div class="calcbutton"id="calcpowers">x <sup>y</sup></div>
+                <div class="calcbutton"id="calcsqrt">
+                    &radic;<span>&nbsp;&nbsp;</span></sup>
+                </div>
+                <div class="calcbutton"id="modulo">%</div>
+                <div class="calcbutton"id="clear">C</div>
+                <div class="calcnumber"id="num1">1</div>
+                <div class="calcnumber"id="num2">2</div>
+                <div class="calcnumber"id="num3">3</div>
+                <div class="calcbutton"id="divide">&divide;</div>
+                <div class="calcnumber"id="num4">4</div>
+                <div class="calcnumber"id="num5">5</div>
+                <div class="calcnumber"id="num6">6</div>
+                <div class="calcbutton"id="multiply">*</div>
+                <div class="calcnumber"id="num7">7</div>
+                <div class="calcnumber"id="num8">8</div>
+                <div class="calcnumber"id="num9">9</div>
+                <div class="calcbutton"id="subtract">-</div>
+                <div class="calcbutton"id="negative">-x</div>
+                <div class="calcnumber"id="num0">0</div>
+                <div class="calcbutton"id="point">.</div>
+                <div class="calcbutton"id="equals">=</div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </body>     
+</html>
