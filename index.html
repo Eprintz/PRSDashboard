@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="shortcut icon" href="/Pictures/favicon.ico" type="image/x-icon" />
 <link href='http://fonts.googleapis.com/css?family=Roboto'rel='stylesheet' type='text/css'>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="/Plugins/jquery-2.1.1.min.js"></script>
 <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 <script src="script.js"></script>
@@ -40,7 +40,7 @@
                 <img src="Pictures/show6.png">
             </div>
             <div id="title">Pacific Ridge Dashboard</div>
-            <div id="date"></div>
+                <div id="date"></div>
             <div id="settings">
                 <img src="Pictures/equalizer3.png">
                 <img src="Pictures/male80.png">
@@ -99,40 +99,59 @@
                     <br>Period 8<br>1:25-3:00<br>
                 </div>
             </div>
+        <div id="calendarsection">
+            <div id="calendar">
+                <div id="calendartitle">November</div>
+                <div>
+                    <div class="calendarday"id="cd1"></div>
+                    <div class="calendarday"id="cd2"></div>
+                    <div class="calendarday"id="cd3"></div>
+                    <div class="calendarday"id="cd4"></div>
+                    <div class="calendarday"id="cd5"></div>
+                    <div class="calendarday"id="cd6"></div>
+                    <div class="calendarday"id="cd7"></div>
+                </div>
+                <div>
+                    <div class="calendarday"id="cd8"></div>
+                    <div class="calendarday"id="cd9"></div>
+                    <div class="calendarday"id="cd10"></div>
+                    <div class="calendarday"id="cd11"></div>
+                    <div class="calendarday"id="cd12"></div>
+                    <div class="calendarday"id="cd13"></div>
+                    <div class="calendarday"id="cd14"></div>
+                </div>
+                <div>
+                    <div class="calendarday"id="cd15"></div>
+                    <div class="calendarday"id="cd16"></div>
+                    <div class="calendarday"id="cd17"></div>
+                    <div class="calendarday"id="cd18"></div>
+                    <div class="calendarday"id="cd19"></div>
+                    <div class="calendarday"id="cd20"></div>
+                    <div class="calendarday"id="cd21"></div>
+                </div>
+                <div>
+                    <div class="calendarday"id="cd22"></div>
+                    <div class="calendarday"id="cd23"></div>
+                    <div class="calendarday"id="cd24"></div>
+                    <div class="calendarday"id="cd25"></div>
+                    <div class="calendarday"id="cd26"></div>
+                    <div class="calendarday"id="cd27"></div>
+                    <div class="calendarday"id="cd28"></div>
+                </div>
+                <div class="calendarday"id="cd29"></div>
+                <div class="calendarday"id="cd30"></div>
+                <div class="calendarday"id="cd31"></div>
+            </div>
+            <div id='tasks'>
+                <div id='taskstitle'>Tasks</div>
+                <div id='createdtasks'></div>
+                <div id='newtask'>
+                    Create New Task
+                    <img src='Pictures/plus32.png'></div>
+            </div>
+        </div>
         <div id="appssection">
-            <div class="app"id="tasks">
-                <div id="taskstitle">Tasks</div>
-                <div id="createdtasks"></div>
-                <div id="newtask">Create New Task
-                    <img src="Pictures/plus32.png">
-                </div>
-            </div>
-            <div class="app"id="calculator">
-                <div id="calcresult"></div>
-                <div id="calcoperation"></div>
-                <div class="calcbutton"id="calcpowers">x <sup>y</sup></div>
-                <div class="calcbutton"id="calcsqrt">
-                    &radic;<span>&nbsp;&nbsp;</span></sup>
-                </div>
-                <div class="calcbutton"id="modulo">%</div>
-                <div class="calcbutton"id="clear">C</div>
-                <div class="calcnumber"id="num1">1</div>
-                <div class="calcnumber"id="num2">2</div>
-                <div class="calcnumber"id="num3">3</div>
-                <div class="calcbutton"id="divide">&divide;</div>
-                <div class="calcnumber"id="num4">4</div>
-                <div class="calcnumber"id="num5">5</div>
-                <div class="calcnumber"id="num6">6</div>
-                <div class="calcbutton"id="multiply">*</div>
-                <div class="calcnumber"id="num7">7</div>
-                <div class="calcnumber"id="num8">8</div>
-                <div class="calcnumber"id="num9">9</div>
-                <div class="calcbutton"id="subtract">-</div>
-                <div class="calcbutton"id="negative">-x</div>
-                <div class="calcnumber"id="num0">0</div>
-                <div class="calcbutton"id="point">.</div>
-                <div class="calcbutton"id="equals">=</div>
-            </div>
+            
         </div>
         </div>
     </div>
