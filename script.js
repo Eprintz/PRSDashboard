@@ -95,24 +95,20 @@ $(document).ready(function () {
 //Loading Effects
     
 //Overall Webpage Buttons On Click
-var appbaractive = 0;
+var appoverlayactive = 0;
     $("#app").click(function(){
-        if(appbaractive == 0){
-            $("#appbar").css("display","block");
-            $("#body").animate({marginLeft:'240px'}, "300" ,"easeInOutCubic");
-            $("#appbar").animate({opacity:'1'}, "300","easeInOutCubic");
-            $("#app").animate({marginLeft:'240px'}, "100","easeInOutCubic");
-            appbaractive+=1;
+        if(appoverlayactive == 0){
+            $("#appoverlay").css("display","block");
+            $("#appoverlay").animate({opacity:'1'}, "300","easeInOutCubic");
+            appoverlayactive+=1;
         }
         else{
-            $("#body").animate({marginLeft:'0px'}, "300","easeInOutCubic");
-            $("#appbar").animate({opacity:'0'}, "300","easeInOutCubic");
-            $("#app").animate({marginLeft:'0px'}, "100","easeInOutCubic");
+            $("#appoverlay").animate({opacity:'0'}, "300","easeInOutCubic");
             setTimeout(function(){
-                $("#appbar").css("display","none");
+                $("#appoverlay").css("display","none");
             }, 300);
             
-            appbaractive -=1;
+            appoverlayactive -=1;
         }
     });
 var settingsbaractive = 0;
