@@ -104,6 +104,7 @@ img{
         left:5px;
         top:0px;
         cursor:pointer;
+        z-index:11;
     }
         #app img{
             cursor:pointer;
